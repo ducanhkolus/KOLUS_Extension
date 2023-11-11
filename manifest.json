@@ -1,0 +1,20 @@
+{
+    "name": "Ticket URL",
+    "version": "1.0.0",
+    "description": "Show the URL of ticket in Kolus",
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/16x16.png"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "js": [
+                "script.js"
+            ],
+            "matches": [
+                "https://testcrm.poettinger.at/updateCRM_web/crm/*"
+            ]
+        }
+    ]
+}
