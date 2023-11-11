@@ -36,12 +36,12 @@ iframe.addEventListener("load", function () {
           if (description.firstChild.tagName.toLowerCase() === "a") {
             return;
           }
-          // const newDiv = document.createElement("a");
-          // newDiv.className = "new-div-class";
-          // newDiv.target = "_blank";
-          // newDiv.href = `https://app.kolus.io/panel/tickets/${dataApi}`;
-          // newDiv.textContent = `https://app.kolus.io/panel/tickets/${dataApi}`;
-          // description.insertBefore(newDiv, description.firstChild);
+          const newDiv = document.createElement("a");
+          newDiv.className = "new-div-class";
+          newDiv.target = "_blank";
+          newDiv.href = `https://app.kolus.io/panel/tickets/${dataApi}`;
+          newDiv.textContent = `https://app.kolus.io/panel/tickets/${dataApi}`;
+          description.insertBefore(newDiv, description.firstChild);
         }
       });
     });
